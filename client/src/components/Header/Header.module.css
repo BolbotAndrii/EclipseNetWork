@@ -1,0 +1,247 @@
+.inner {
+    position: fixed;
+    z-index: 9;
+    top: 40px;
+    left: 40px;
+    width: 100%;
+    max-width: calc(100% - 80px);
+    background: rgba(2, 0, 98, 0.31);
+    box-shadow: 0 4px 154px rgba(5, 0, 255, 0.5);
+    backdrop-filter: blur(12px);
+    border-radius: 25px;
+    /*padding: 40px 0;*/
+    padding: 0.75em 0;
+    /*border: 2px solid rgba(255, 255, 255, 0.17);*/
+    border: 1px solid rgba(255, 255, 255, .5);
+}
+
+.wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.inner__side,
+.inner__nav {
+    display: flex;
+    align-items: center;
+}
+
+.burger {
+    display: none;
+    height: 33px;
+}
+
+.lang {
+    display: flex;
+    align-items: center;
+    font-family: "SF UI Display", sans-serif;
+    font-weight: 300;
+    font-size: 0.735em;
+    line-height: 1;
+    margin: 0 60px 0 150px;
+    height: 54px;
+}
+
+.login {
+    width: 54px;
+    height: 54px;
+    cursor: pointer;
+}
+
+.burger {
+    cursor: pointer;
+}
+
+.burger > svg,
+.login > svg {
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 3072px) {
+    .lang {
+        margin: 0 60px 0 120px;
+    }
+}
+
+@media (max-width: 2560px) {
+    .inner {
+        box-shadow: 0 4px 100px rgba(5, 0, 255, 0.4);
+    }
+
+    .lang {
+        margin: 0 40px 0 90px;
+    }
+}
+
+@media (max-width: 1920px) {
+    .inner {
+        top: 25px;
+        left: 25px;
+        max-width: calc(100% - 50px);
+        border-radius: 20px;
+        box-shadow: 0 4px 50px rgba(5, 0, 255, 0.3)
+    }
+
+    .lang {
+        height: 28px;
+        margin: 0 40px 0 60px;
+    }
+
+    .login {
+        width: 33px;
+        height: 33px;
+    }
+}
+
+@media (max-width: 1440px) {
+    .inner {
+        padding: 15px 0;
+    }
+
+    .lang {
+        margin: 0 20px 0 40px;
+        font-size: 16px;
+    }
+
+    .login {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .inner {
+        top: 40px;
+        left: inherit;
+        right: 40px;
+        max-width: fit-content;
+        box-shadow: 0 4px 54px rgba(5, 0, 255, 0.5);
+    }
+
+    .inner__nav {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .lang {
+        font-size: 20px;
+        height: 33px;
+        margin: 0 40px 0 60px;
+    }
+
+    .login {
+        width: 33px;
+        height: 33px;
+    }
+}
+
+@media (max-width: 768px) {
+    .burger {
+        height: 28px;
+    }
+
+    .lang {
+        height: 28px;
+        margin: 0 25px 0 35px;
+    }
+
+    .login {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+@media (max-width: 600px) {
+    .inner {
+        border-radius: 10px;
+        padding: 7px 0;
+        top: 30px;
+        right: 20px;
+    }
+
+    .burger {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 34px;
+        height: 18px;
+    }
+
+    .lang {
+        margin: 0 20px;
+    }
+}
+
+
+@media (max-width: 430px) {
+    .inner {
+        background: none;
+        backdrop-filter: none;
+        border: none;
+        box-shadow: none
+    }
+
+    .inner > div {
+        padding: 0;
+    }
+
+    .burger > svg {
+        border-bottom-left-radius: 14px;
+        border-top-left-radius: 14px;
+    }
+}
+
+@media (max-width: 428px) and (max-height: 926px) {
+    .inner {
+        /*top: 28px;*/
+        top: 31px;
+    }
+
+    .lang {
+        font-size: 16px;
+        height: 25px;
+    }
+
+    .login {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+@media (max-width: 390px) {
+    .inner {
+        /*top: 15px;*/
+        top: 20px;
+        right: 15px;
+        padding: 6px 0;
+    }
+
+    /*.lang {*/
+    /*    font-size: 16px;*/
+    /*    height: 25px;*/
+    /*}*/
+    /*.login {*/
+    /*    width: 25px;*/
+    /*    height: 25px;*/
+    /*}*/
+    /*.burger {*/
+    /*    display: flex;*/
+    /*    align-items: center;*/
+    /*}*/
+    /*.burger > svg {*/
+    /*    border-bottom-left-radius: 14px;*/
+    /*    border-top-left-radius: 14px;*/
+    /*}*/
+}
+
+@media (max-width: 390px) {
+    .inner {
+        right: 10px;
+        top: 15px;
+    }
+}

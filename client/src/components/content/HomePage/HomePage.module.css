@@ -1,0 +1,754 @@
+.choose {
+    font-family: "SF UI Display", sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    /*font-size: 60px;*/
+    font-size: 1.11em;
+    text-align: center;
+    letter-spacing: 0.9em;
+    text-transform: uppercase;
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%, -70%);
+}
+
+.copy {
+    display: inline-block;
+    position: absolute;
+    /*bottom: 30px;*/
+    bottom: 0.552em;
+}
+
+.button {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.button img {
+    width: 100%;
+    height: 100%;
+}
+
+.button_buyers {
+    max-width: 140px;
+    max-height: 140px;
+    position: absolute;
+    left: 8.4%;
+    top: 70%;
+    transform: translateY(-70%);
+    display: flex;
+    justify-content: center;
+}
+
+.button_buyers:before,
+.button_buyers:after,
+.button_buyers span {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.3s 0s linear;
+}
+
+.button_buyers:before {
+    /*top: -11px;*/
+    width: 160px;
+    height: 160px;
+}
+
+.button_buyers:after {
+    /*top: -26px;*/
+    width: 190px;
+    height: 190px;
+    opacity: 0.5;
+}
+
+.button_buyers span {
+    /*top: -51px;*/
+    width: 240px;
+    height: 240px;
+    opacity: 0.2;
+}
+
+.button_buyers:hover:before,
+.button_buyers:hover:after,
+.button_buyers:hover span {
+    width: 135px;
+    height: 135px;
+    opacity: .1;
+}
+
+.button_brokers {
+    max-width: 100px;
+    max-height: 100px;
+    position: absolute;
+    right: 70px;
+    top: 60%;
+    transform: translateY(-60%) rotate(270deg);
+}
+
+.button_brokers:before,
+.button_brokers:after,
+.button_brokers span {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    border: 1px solid #000;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s 0s linear;
+}
+
+.button_brokers:before {
+    /*top: -11px;*/
+    /*right: -11px;*/
+    width: 120px;
+    height: 120px;
+}
+
+.button_brokers:after {
+    /*top: -26px;*/
+    /*right: -26px;*/
+    width: 150px;
+    height: 150px;
+    opacity: 0.5;
+}
+
+.button_brokers span {
+    /*top: -51px;*/
+    /*right: -51px;*/
+    width: 200px;
+    height: 200px;
+    opacity: 0.2;
+}
+
+.button_brokers:hover:before,
+.button_brokers:hover:after,
+.button_brokers:hover span {
+    width: 95px;
+    height: 95px;
+    opacity: .1;
+}
+
+@media screen and (max-width: 3072px) {
+    .button_buyers {
+        max-width: 130px;
+        max-height: 130px;
+        left: 9%;
+    }
+
+    .button_brokers {
+        max-width: 90px;
+        max-height: 90px;
+        top: 58%;
+        transform: translateY(-58%) rotate(270deg);
+    }
+
+    .button_buyers:before {
+        /*top: -11px;*/
+        width: 150px;
+        height: 150px;
+    }
+
+    .button_buyers:after {
+        /*top: -26px;*/
+        width: 180px;
+        height: 180px;
+        opacity: 0.5;
+    }
+
+    .button_buyers span {
+        /*top: -51px;*/
+        width: 230px;
+        height: 230px;
+        opacity: 0.2;
+    }
+
+    .button_brokers:before {
+        /*top: -11px;*/
+        /*right: -11px;*/
+        width: 110px;
+        height: 110px;
+    }
+
+    .button_brokers:after {
+        /*top: -26px;*/
+        /*right: -26px;*/
+        width: 140px;
+        height: 140px;
+        opacity: 0.5;
+    }
+
+    .button_brokers span {
+        /*top: -51px;*/
+        /*right: -51px;*/
+        width: 190px;
+        height: 190px;
+        opacity: 0.2;
+    }
+
+    .button_buyers:hover:before,
+    .button_buyers:hover:after,
+    .button_buyers:hover span {
+        width: 125px;
+        height: 125px;
+        opacity: .1;
+    }
+
+    .button_brokers:hover:before,
+    .button_brokers:hover:after,
+    .button_brokers:hover span {
+        width: 85px;
+        height: 85px;
+        opacity: .1;
+    }
+}
+
+@media (max-width: 2560px) {
+    .button_buyers {
+        max-width: 100px;
+        max-height: 100px;
+    }
+
+    .button_brokers {
+        max-width: 70px;
+        max-height: 70px;
+    }
+
+    .button_buyers:before {
+        /*top: -11px;*/
+        width: 120px;
+        height: 120px;
+    }
+
+    .button_buyers:after {
+        /*top: -26px;*/
+        width: 150px;
+        height: 150px;
+        opacity: 0.5;
+    }
+
+    .button_buyers span {
+        /*top: -51px;*/
+        width: 200px;
+        height: 200px;
+        opacity: 0.2;
+    }
+
+    .button_brokers:before {
+        /*top: -11px;*/
+        /*right: -11px;*/
+        width: 90px;
+        height: 90px;
+    }
+
+    .button_brokers:after {
+        /*top: -26px;*/
+        /*right: -26px;*/
+        width: 120px;
+        height: 120px;
+        opacity: 0.5;
+    }
+
+    .button_brokers span {
+        /*top: -51px;*/
+        /*right: -51px;*/
+        width: 170px;
+        height: 170px;
+        opacity: 0.2;
+    }
+
+    .button_buyers:hover:before,
+    .button_buyers:hover:after,
+    .button_buyers:hover span {
+        width: 95px;
+        height: 95px;
+        opacity: .1;
+    }
+
+    .button_brokers:hover:before,
+    .button_brokers:hover:after,
+    .button_brokers:hover span {
+        width: 65px;
+        height: 65px;
+        opacity: .1;
+    }
+}
+
+@media (max-width: 1920px) {
+    .choose {
+        left: 50%;
+        top: 65%;
+        transform: translate(-50%, -65%);
+    }
+
+    .copy {
+        bottom: 0;
+    }
+
+    .button_buyers {
+        width: 65px;
+        height: 65px;
+        left: 6%;
+        top: 65%;
+        transform: translate(-6%, -65%);
+    }
+
+    .button_brokers {
+        width: 45px;
+        height: 45px;
+        right: 25px;
+        top: 56%;
+        transform: translateY(-56%) rotate(270deg);
+    }
+
+    .button_buyers:before {
+        /*top: -6px;*/
+        width: 75px;
+        height: 75px;
+    }
+
+    .button_buyers:after {
+        /*top: -11px;*/
+        width: 85px;
+        height: 85px;
+        opacity: 0.5;
+    }
+
+    .button_buyers span {
+        /*top: -20px;*/
+        width: 105px;
+        height: 105px;
+        opacity: 0.2;
+    }
+
+    .button_brokers:before {
+        /*top: -6px;*/
+        /*right: -6px;*/
+        width: 55px;
+        height: 55px;
+    }
+
+    .button_brokers:after {
+        /*top: -11px;*/
+        /*right: -11px;*/
+        width: 65px;
+        height: 65px;
+        opacity: 0.5;
+    }
+
+    .button_brokers span {
+        /*top: -20px;*/
+        /*right: -20px;*/
+        width: 85px;
+        height: 85px;
+        opacity: 0.2;
+    }
+
+    .button_buyers:hover:before,
+    .button_buyers:hover:after,
+    .button_buyers:hover span {
+        width: 61px;
+        height: 61px;
+        opacity: .1;
+    }
+
+    .button_brokers:hover:before,
+    .button_brokers:hover:after,
+    .button_brokers:hover span {
+        width: 41px;
+        height: 41px;
+        opacity: .1;
+    }
+}
+
+@media (max-width: 1440px) {
+    .button_buyers {
+        width: 60px;
+        height: 60px;
+        left: 6%;
+        top: 68%;
+        transform: translate(-6%, -68%);
+    }
+
+    .button_brokers {
+        width: 45px;
+        height: 45px;
+        right: 25px;
+        top: 58%;
+        transform: translateY(-58%) rotate(270deg);
+    }
+
+    .button_buyers:before {
+        /*top: -6px;*/
+        width: 70px;
+        height: 70px;
+    }
+
+    .button_buyers:after {
+        /*top: -11px;*/
+        width: 80px;
+        height: 80px;
+        opacity: 0.5;
+    }
+
+    .button_buyers span {
+        /*top: -20px;*/
+        width: 100px;
+        height: 100px;
+        opacity: 0.2;
+    }
+
+    .button_brokers:before {
+        /*top: -6px;*/
+        /*right: -6px;*/
+        width: 55px;
+        height: 55px;
+    }
+
+    .button_brokers:after {
+        /*top: -11px;*/
+        /*right: -11px;*/
+        width: 65px;
+        height: 65px;
+        opacity: 0.5;
+    }
+
+    .button_brokers span {
+        /*top: -20px;*/
+        /*right: -20px;*/
+        width: 85px;
+        height: 85px;
+        opacity: 0.2;
+    }
+
+    .button_buyers:hover:before,
+    .button_buyers:hover:after,
+    .button_buyers:hover span {
+        width: 58px;
+        height: 58px;
+        opacity: .1;
+    }
+
+    .button_brokers:hover:before,
+    .button_brokers:hover:after,
+    .button_brokers:hover span {
+        width: 41px;
+        height: 41px;
+        opacity: .1;
+    }
+}
+
+@media (max-width: 1024px) {
+    .button_buyers {
+        width: 65px;
+        height: 65px;
+        left: 10%;
+        top: 60%;
+        transform: translate(-10%, -60%);
+    }
+
+    .button_brokers {
+        width: 45px;
+        height: 45px;
+        right: 20px;
+        top: 53%;
+        transform: translateY(-53%) rotate(270deg);
+    }
+
+    .button_buyers:before {
+        /*top: -6px;*/
+        width: 75px;
+        height: 75px;
+    }
+
+    .button_buyers:after {
+        /*top: -11px;*/
+        width: 85px;
+        height: 85px;
+        opacity: 0.5;
+    }
+
+    .button_buyers span {
+        /*top: -20px;*/
+        width: 105px;
+        height: 105px;
+        opacity: 0.2;
+    }
+
+    .button_brokers:before {
+        /*top: -6px;*/
+        /*right: -6px;*/
+        width: 55px;
+        height: 55px;
+    }
+
+    .button_brokers:after {
+        /*top: -11px;*/
+        /*right: -11px;*/
+        width: 65px;
+        height: 65px;
+        opacity: 0.5;
+    }
+
+    .button_brokers span {
+        /*top: -20px;*/
+        /*right: -20px;*/
+        width: 85px;
+        height: 85px;
+        opacity: 0.2;
+    }
+
+    .button_buyers:hover:before,
+    .button_buyers:hover:after,
+    .button_buyers:hover span {
+        width: 61px;
+        height: 61px;
+        opacity: .1;
+    }
+
+    .button_brokers:hover:before,
+    .button_brokers:hover:after,
+    .button_brokers:hover span {
+        width: 41px;
+        height: 41px;
+        opacity: .1;
+    }
+
+    .choose {
+        width: 100%;
+        top: 70%;
+        transform: translate(-50%, -70%);
+    }
+}
+
+@media (max-width: 600px) {
+    .button_buyers {
+        width: 40px;
+        height: 40px;
+        left: 13%;
+        top: 60%;
+        transform: translate(-13%, -60%);
+    }
+
+    .button_brokers {
+        width: 30px;
+        height: 30px;
+        right: 20px;
+        top: 29%;
+        transform: translateY(-29%) rotate(270deg);
+    }
+
+    .button_buyers:before {
+        /*top: -4px;*/
+        width: 46px;
+        height: 46px;
+    }
+
+    .button_buyers:after {
+        /*top: -9px;*/
+        width: 56px;
+        height: 56px;
+        opacity: 0.5;
+    }
+
+    .button_buyers span {
+        /*top: -14px;*/
+        width: 68px;
+        height: 68px;
+        opacity: 0.2;
+    }
+
+    .button_brokers:before {
+        /*top: -4px;*/
+        /*right: -4px;*/
+        width: 36px;
+        height: 36px;
+    }
+
+    .button_brokers:after {
+        /*top: -9px;*/
+        /*right: -9px;*/
+        width: 46px;
+        height: 46px;
+        opacity: 0.5;
+    }
+
+    .button_brokers span {
+        /*top: -14px;*/
+        /*right: -14px;*/
+        width: 58px;
+        height: 58px;
+        opacity: 0.2;
+    }
+
+    .button_buyers:hover:before,
+    .button_buyers:hover:after,
+    .button_buyers:hover span {
+        width: 38px;
+        height: 38px;
+        opacity: .1;
+    }
+
+    .button_brokers:hover:before,
+    .button_brokers:hover:after,
+    .button_brokers:hover span {
+        width: 28px;
+        height: 28px;
+        opacity: .1;
+    }
+
+    .choose {
+        letter-spacing: 0.7em;
+        top: 75%;
+        transform: translate(-50%, -75%);
+    }
+
+    .copy {
+        display: none;
+    }
+}
+
+@media (max-width: 428px) and (max-height: 926px) {
+    .button_buyers {
+        left: 17.5%;
+        top: 68%;
+        transform: translate(-17.5%, -68%);
+    }
+
+    .button_brokers {
+        top: 31%;
+        transform: translateY(-31%) rotate(270deg);
+    }
+
+    .choose {
+        font-size: 20px;
+        padding: 0 15px;
+        letter-spacing: 10px;
+        line-height: 72px;
+        top: inherit;
+        transform: translate(-50%, 0%);
+        bottom: 110px;
+    }
+}
+
+@media (max-width: 390px) {
+    .button_buyers {
+        width: 38px;
+        height: 38px;
+        left: 13.5%;
+        top: 66%;
+        transform: translate(-13.5%, -66%);
+    }
+
+    .button_buyers:before {
+        /*top: -6px;*/
+        width: 48px;
+        height: 48px;
+    }
+
+    .button_buyers:after {
+        /*top: -11px;*/
+        width: 58px;
+        height: 58px;
+        opacity: 0.5;
+    }
+
+    .button_buyers span {
+        /*top: -15px;*/
+        width: 68px;
+        height: 68px;
+        opacity: 0.2;
+    }
+
+    .button_buyers:hover:before,
+    .button_buyers:hover:after,
+    .button_buyers:hover span {
+        width: 36px;
+        height: 36px;
+        opacity: .1;
+    }
+
+    .button_brokers {
+        top: 32%;
+        transform: translateY(-32%) rotate(270deg);
+        right: 20px;
+    }
+
+    .choose {
+        font-size: 18px;
+        bottom: 90px;
+    }
+}
+@media (max-width: 375px) {
+    .choose {
+        font-size: 14px;
+        bottom: 70px;
+    }
+    .button_buyers {
+        width: 34px;
+        height: 34px;
+    }
+    .button_brokers {
+        width: 28px;
+        height: 28px;
+        right: 15px;
+    }
+
+    .button_buyers:before {
+        display: none;
+    }
+
+    .button_buyers:after {
+        width: 42px;
+        height: 42px;
+        opacity: 0.5;
+    }
+
+    .button_buyers span {
+        width: 56px;
+        height: 56px;
+        opacity: 0.2;
+    }
+
+    .button_buyers:hover:before,
+    .button_buyers:hover:after,
+    .button_buyers:hover span {
+        width: 34px;
+        height: 34px;
+        opacity: .1;
+    }
+
+    .button_brokers:before {
+        display: none;
+    }
+
+    .button_brokers:after {
+        width: 34px;
+        height: 34px;
+        opacity: 0.5;
+    }
+
+    .button_brokers span {
+        width: 46px;
+        height: 46px;
+        opacity: 0.2;
+    }
+
+    .button_brokers:hover:before,
+    .button_brokers:hover:after,
+    .button_brokers:hover span {
+        width: 28px;
+        height: 28px;
+        opacity: .1;
+    }
+}

@@ -1,0 +1,557 @@
+.title {
+    font-family: "Gilroy", sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: -0.055em;
+    line-height: .74;
+    display: inline-block;
+    transition: all .3s ease-in-out;
+    /*cursor: pointer;*/
+}
+
+.buyers {
+    -webkit-text-stroke: 9px #fff;
+    font-size: 4.4em;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    /*cursor: pointer;*/
+}
+
+/*.buyers:hover {*/
+/*    -webkit-text-stroke: 0 #fff;*/
+/*    -webkit-text-fill-color: #fff;*/
+/*    text-shadow: 0 4px 44px #A400FF;*/
+/*    line-height: .8;*/
+/*    letter-spacing: -0.02em;*/
+/*}*/
+
+.brokers {
+    -webkit-text-stroke: 4px #000;
+    font-size: 1.66em;
+    position: absolute;
+    right: 70px;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: right;
+    /*cursor: pointer;*/
+}
+
+/*.brokers:hover {*/
+/*    -webkit-text-stroke: 0 #000;*/
+/*    -webkit-text-fill-color: #000;*/
+/*    line-height: .8;*/
+/*    letter-spacing: -0.02em;*/
+/*    text-shadow: 10px 0 20px #FFFFFF;*/
+/*}*/
+
+.providing,
+.goals,
+.methods,
+.contact,
+.stable,
+.roadmap,
+.broker {
+    -webkit-text-stroke: 4px #fff;
+    font-size: 2.5em;
+    display: block;
+    letter-spacing: -0.02em;
+    line-height: .9;
+}
+
+.providing {
+    margin: 0.9em 0 1.1em;
+}
+
+.goals {
+    margin: 0.9em 0 1.1em;
+}
+
+.methods {
+    margin: 0.5em 0 0.9em;
+}
+
+.contact {
+    margin: 0.9em 0 1.1em;
+}
+
+.stable,
+.roadmap,
+.broker {
+    -webkit-text-fill-color: #fff;
+    -webkit-text-stroke: 0 #fff;
+}
+
+.stable,
+.broker {
+    margin: 0.5em 0 0.9em;
+}
+
+.roadmap {
+    margin: 0.9em 0 1.1em;
+}
+
+.number {
+    -webkit-text-stroke: 5px #A400FF;
+    font-size: 4.9em;
+    line-height: 1;
+    letter-spacing: inherit;
+}
+
+.providing__card-title,
+.roadmap__card-title {
+    font-size: 1.01em;
+    line-height: 1.1;
+    -webkit-text-fill-color: #fff;
+    letter-spacing: normal;
+}
+
+.providing__card-text,
+.roadmap__card-text {
+    -webkit-text-fill-color: #fff;
+    font-weight: 500;
+    font-size: .83em;
+    line-height: 1.1;
+    text-transform: inherit;
+    margin-top: 10px;
+    letter-spacing: normal;
+}
+
+.goals__card-text,
+.stable__card-text {
+    -webkit-text-fill-color: #fff;
+    font-size: 1.2em;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-shadow: 0 0 12px rgba(255, 214, 0, 0.7);
+}
+
+.stable__card-text {
+    text-transform: inherit;
+    font-size: 1.35em;
+    text-shadow: none;
+}
+
+
+.methods__card-title {
+    -webkit-text-fill-color: #fff;
+    font-size: 1.48em;
+    line-height: 1;
+    letter-spacing: normal;
+    width: 100%;
+    max-width: 4.4em;
+    margin-right: 0.8em;
+}
+
+.methods__card-text {
+    -webkit-text-fill-color: #fff;
+    font-weight: 500;
+    font-size: 0.8em;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: inherit;
+}
+
+.form__title,
+.modal__title {
+    font-size: 1em;
+    line-height: 1;
+    -webkit-text-fill-color: #000;
+}
+
+.modal__title {
+    line-height: 1.1;
+    -webkit-text-fill-color: #fff;
+}
+
+@media screen and (max-width: 3072px) {
+    .buyers,
+    .brokers {
+        top: 45%;
+        transform: translateY(-45%);
+    }
+}
+
+@media (max-width: 2560px) {
+    .stable__card-text {
+        font-size: 1.3em;
+    }
+}
+
+@media (max-width: 1920px) {
+    .buyers {
+        -webkit-text-stroke: 5px #fff;
+        font-size: 4.255em;
+    }
+
+    .brokers {
+        -webkit-text-stroke: 3px #000;
+        right: 25px;
+        font-size: 1.825em;
+    }
+
+    .providing,
+    .goals,
+    .methods,
+    .contact {
+        -webkit-text-stroke: 3px #fff;
+    }
+
+    .number {
+        -webkit-text-stroke: 3px #A400FF;
+        font-size: 4.75em;
+        width: 100%;
+        max-width: 76px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .providing__card-title,
+    .roadmap__card-title {
+        font-size: 1.095em;
+    }
+
+    .providing__card-text,
+    .roadmap__card-text {
+        font-size: .75em;
+    }
+
+    .goals__card-text {
+        font-size: 1.35em;
+    }
+
+    .stable__card-text {
+        font-size: 1.25em;
+    }
+
+    .methods {
+        margin: 0.6em 0 0.8em;
+    }
+
+    .contact {
+        margin: 0.6em 0 0.8em;
+    }
+}
+
+@media (max-width: 1440px) {
+    .buyers {
+        -webkit-text-stroke: 4px #fff;
+    }
+
+    .brokers {
+        -webkit-text-stroke: 2px #000;
+    }
+
+    .stable__card-text {
+        font-size: 1.35em;
+    }
+}
+
+@media (max-width: 1024px) {
+    .buyers,
+    .brokers {
+        top: 43%;
+        transform: translateY(-43%);
+    }
+
+    .buyers {
+        font-size: 4em;
+    }
+
+    .brokers {
+        font-size: 1.7em;
+        right: 20px;
+    }
+
+    .number {
+        font-size: 4.4em;
+    }
+
+    .providing__card-title,
+    .roadmap__card-title {
+        font-size: 1em;
+    }
+
+    .providing__card-text,
+    .roadmap__card-text {
+        font-size: .7em;
+    }
+
+    .methods {
+        margin: 0.9em 0 1.1em;
+    }
+
+    .contact {
+        margin: 0.9em 0 1.1em;
+    }
+
+    .stable {
+        margin: 0.9em 0 1.1em;
+    }
+
+    .stable__card-text {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 768px) {
+    .stable {
+        margin: 0.5em 0 0.9em;
+    }
+
+    .stable__card-text {
+        font-size: 1.1em;
+    }
+
+    .stable,
+    .roadmap,
+    .broker {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 600px) {
+    .brokers {
+        top: 20%;
+        transform: translateY(-20%);
+    }
+
+    .buyers {
+        font-size: 3.7em;
+    }
+
+    .providing__card-text,
+    .roadmap__card-text {
+        font-size: .8em;
+    }
+
+    .providing,
+    .goals,
+    .methods,
+    .contact {
+        font-size: 2em;
+        /*-webkit-text-fill-color: #fff;*/
+        -webkit-text-stroke: 1px #fff;
+        letter-spacing: -0.02em;
+    }
+}
+
+@media (max-width: 428px) and (max-height: 926px) {
+    .brokers {
+        font-size: 36px;
+    }
+
+    .buyers {
+        -webkit-text-stroke: 3px #fff;
+        font-size: 80px;
+        top: 48%;
+        transform: translateY(-48%);
+    }
+
+    .providing,
+    .goals,
+    .methods,
+    .contact {
+        font-size: 36px;
+        letter-spacing: -0.03em;
+        line-height: 1;
+        /*font-size: 42px;*/
+        margin: 40px 0 30px;
+    }
+
+    .stable,
+    .roadmap,
+    .broker {
+        font-size: 36px;
+        letter-spacing: -0.03em;
+        line-height: 1;
+        margin: 40px 0 30px;
+    }
+
+    .broker {
+        font-size: 20px;
+        margin: 30px 0 20px;
+    }
+
+    .goals,
+    .methods {
+        margin: 40px 0;
+    }
+
+    .contact {
+        margin: 30px 0 20px;
+    }
+
+    .number {
+        max-width: 70px;
+        -webkit-text-stroke: 2px #A400FF;
+        font-size: 80px;
+    }
+
+    .providing__card-title,
+    .roadmap__card-title {
+        font-size: 22px;
+    }
+
+    .providing__card-text,
+    .roadmap__card-text {
+        font-size: 16px;
+    }
+
+    .goals__card-text {
+        font-size: 26px;
+    }
+
+    .stable__card-text {
+        font-size: 18px;
+    }
+
+    .methods__card-title {
+        font-size: 28px;
+    }
+
+    .methods__card-text {
+        font-size: 16px;
+    }
+
+    .form__title {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 390px) {
+    .buyers {
+        font-size: 60px;
+    }
+
+    .brokers {
+        font-size: 30px;
+        right: 15px;
+    }
+
+    .providing,
+    .goals,
+    .methods,
+    .contact {
+        font-size: 34px;
+        letter-spacing: -0.03em;
+        line-height: 1;
+        margin: 35px 0;
+    }
+
+    .stable,
+    .roadmap {
+        font-size: 32px;
+        letter-spacing: -0.03em;
+        line-height: 1;
+        margin: 35px 0;
+    }
+
+    .broker {
+        font-size: 18px;
+        /*margin: 30px 0 20px;*/
+        margin: 20px 0 15px;
+    }
+
+    .contact {
+        margin: 30px 0 15px;
+    }
+
+    .number {
+        max-width: 60px;
+        font-size: 68px;
+    }
+
+    .providing__card-title,
+    .roadmap__card-title {
+        font-size: 20px;
+    }
+
+    .goals__card-text {
+        font-size: 24px;
+        line-height: 1.3;
+    }
+
+    .stable__card-text {
+        font-size: 16px;
+        line-height: 1.3;
+    }
+
+    .methods__card-title {
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 6px;
+        font-size: 24px;
+    }
+
+
+}
+
+@media (max-width: 375px) {
+    .buyers {
+        -webkit-text-stroke: 2px #fff;
+        font-size: 52px;
+    }
+
+    .brokers {
+        -webkit-text-stroke: 1px #000;
+        font-size: 28px;
+        right: 10px;
+    }
+
+    .number {
+        max-width: 40px;
+        font-size: 60px;
+    }
+
+    .providing,
+    .goals,
+    .methods,
+    .contact,
+    .stable,
+    .roadmap {
+        font-size: 28px;
+        margin: 25px 0;
+    }
+
+    .contact {
+        margin: 20px 0 15px;
+    }
+
+    .providing__card-title,
+    .roadmap__card-title {
+        font-size: 18px;
+        text-transform: inherit;
+    }
+
+    .providing__card-text,
+    .roadmap__card-text {
+        font-size: 14px;
+        margin-top: 5px;
+    }
+
+    .goals__card-text {
+        font-size: 20px;
+        line-height: 1.4;
+    }
+
+    .methods__card-title {
+        font-size: 20px;
+    }
+
+    .methods__card-text {
+        font-size: 14px;
+    }
+
+    .form__title {
+        font-size: 16px;
+    }
+
+    .stable__card-text {
+        font-size: 14px;
+    }
+    .broker {
+        margin: 20px 0;
+    }
+}

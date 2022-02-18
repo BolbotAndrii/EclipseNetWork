@@ -1,0 +1,415 @@
+.inner {
+    width: 100%;
+    height: 100%;
+    background: rgba(20, 0, 255, 0.03);
+    box-shadow: 0 4px 154px rgba(5, 0, 255, 0.5);
+    backdrop-filter: blur(20px);
+    border-radius: 40px;
+    position: relative;
+    z-index: 4;
+    /*border: 2px solid rgba(255, 255, 255, 0.17);*/
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.providing__card,
+.roadmap__card {
+    max-width: 15.8em;
+}
+
+.roadmap__card {
+    position: relative;
+}
+
+.providing__card > .wrap,
+.roadmap__card > .wrap {
+    height: 100%;
+    padding: 1.11em;
+    justify-content: space-between;
+}
+
+.providing__card:last-child {
+    margin-right: 158px;
+}
+
+.roadmap__card:last-child {
+    margin-left: 5em;
+}
+
+.goals__card {
+    max-width: 18em;
+}
+
+.stable__card {
+    max-width: 24.5em;
+    position: relative;
+}
+
+/*.stable__card:before,*/
+/*.stable__card:after,*/
+/*.stable__card > .wrap:before,*/
+/*.roadmap__card:before,*/
+/*.roadmap__card:after,*/
+/*.roadmap__card > .wrap:before {*/
+/*    content: '';*/
+/*    position: absolute;*/
+/*    top: 50%;*/
+/*    transform: translateY(-50%);*/
+/*    background: #fff;*/
+/*}*/
+
+/*.stable__card:before,*/
+/*.roadmap__card:before {*/
+/*    left: -5em;*/
+/*    width: 5em;*/
+/*    height: 1px;*/
+/*}*/
+
+/*.stable__card:after,*/
+/*.roadmap__card:after {*/
+/*    left: -7px;*/
+/*    width: 14px;*/
+/*    height: 14px;*/
+/*    filter: blur(4px);*/
+/*    border-radius: 50%;*/
+/*}*/
+
+.stable__card:last-child {
+    max-width: 19.5em;
+    margin-left: 5em;
+}
+
+.goals__card > .wrap,
+.stable__card > .wrap {
+    padding: 1.25em 1.8em;
+    position: relative;
+}
+
+
+/*.stable__card > .wrap:before,*/
+/*.roadmap__card > .wrap:before {*/
+/*    left: -5.15em;*/
+/*    width: 14px;*/
+/*    height: 14px;*/
+/*    filter: blur(4px);*/
+/*    border-radius: 50%;*/
+/*}*/
+
+/*.stable__card:first-child > .wrap:before,*/
+/*.roadmap__card:first-child > .wrap:before {*/
+/*    width: 50px;*/
+/*    height: 50px;*/
+/*    left: -5.4em;*/
+/*    filter: blur(10px);*/
+/*}*/
+
+.methods__card {
+    max-width: 24.9em;
+}
+
+.methods__card > .wrap {
+    padding: 1.5em 1.8em;
+}
+
+.contact__card-first {
+    background: rgba(5, 0, 67, 0.73);
+    max-width: 12.9em;
+}
+
+.contact__card-first > .wrap {
+    padding: 0.95em 1.5em;
+}
+
+.contact__card-second {
+    background: rgba(255, 255, 255, 0.03);
+    max-width: 14.2em;
+    margin-left: 2.5em;
+}
+
+.contact__card-second > .wrap {
+    padding: 0.95em 1.3em;
+}
+
+.broker__card-first {
+    background: rgba(5, 0, 67, 0.73);
+    max-width: 18em;
+}
+
+.broker__card-first > .wrap {
+    padding: 1.1em 1.6em;
+}
+
+.broker__card-second {
+    background: rgba(255, 255, 255, 0.5);
+    max-width: 14.2em;
+    margin-left: 2.5em;
+}
+
+.broker__card-second > .wrap {
+    padding: 0.95em 1.3em;
+}
+
+
+@media screen and (max-width: 3072px) {
+    .providing__card:last-child {
+        margin-right: 100px;
+    }
+
+    .stable__card:last-child,
+    .roadmap__card:last-child {
+        margin-left: 4em;
+    }
+}
+
+@media (max-width: 2560px) {
+    .inner {
+        box-shadow: 0 4px 100px rgba(5, 0, 255, 0.4);
+    }
+
+    .providing__card:last-child {
+        margin-right: 60px;
+    }
+
+    .stable__card,
+    .roadmap__card,
+    .broker__card-first {
+        margin-left: 2em;
+    }
+}
+
+@media (max-width: 1920px) {
+    .inner {
+        border-radius: 20px;
+        box-shadow: 0 4px 50px rgba(5, 0, 255, 0.3);
+    }
+
+    .roadmap__card {
+        max-width: 17.8em;
+    }
+
+    .providing__card {
+        max-width: 17em;
+    }
+
+    .providing__card > .wrap {
+        padding: 0.9em 1.11em;
+    }
+
+    .providing__card:last-child {
+        margin-right: 20px;
+    }
+
+    .goals__card {
+        max-width: 20.2em;
+    }
+
+    .goals__card > .wrap,
+    .stable__card > .wrap {
+        padding: 1.25em 1.5em;
+    }
+
+    .stable__card:last-child,
+    .roadmap__card:last-child {
+        margin-left: 3em;
+    }
+
+    .methods__card > .wrap {
+        padding: 1.5em;
+    }
+
+    .contact__card-first {
+        max-width: 15.5em;
+    }
+
+    .contact__card-first > .wrap {
+        padding: 1.2em 1.45em 1.2em 1.65em;
+    }
+
+    .contact__card-second {
+        max-width: 15.35em;
+        margin-left: 40px;
+    }
+
+    .contact__card-second > .wrap {
+        padding: 1.2em 1.3em;
+    }
+}
+
+
+@media (max-width: 1440px) {
+    .providing__card:last-child {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 1280px) {
+}
+
+@media (max-width: 1024px) {
+    .inner {
+        box-shadow: 0 4px 54px rgba(5, 0, 255, 0.5);
+    }
+
+    .providing__card {
+        max-width: 13.5em;
+    }
+
+    .providing__card > .wrap {
+        padding: 1em;
+    }
+
+    .stable__card,
+    .roadmap__card,
+    .broker__card-first {
+        margin: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .providing__card > .wrap {
+        min-height: 17em;
+    }
+
+    .stable__card {
+        max-width: 100%;
+    }
+
+    .stable__card:last-child {
+        max-width: 100%;
+        margin-left: 0;
+        margin-top: 1.5em;
+    }
+}
+
+@media (max-width: 600px) {
+    .providing__card,
+    .roadmap__card {
+        background: 0;
+        backdrop-filter: none;
+        border-radius: 0;
+        border: none;
+        box-shadow: none;
+        max-width: 100%;
+    }
+
+    .roadmap__card:last-child {
+        margin: 0;
+    }
+
+    .stable__card:last-child {
+        margin-top: 1em;
+    }
+
+    .providing__card > .wrap,
+    .roadmap__card > .wrap {
+        padding: 0;
+        min-height: inherit;
+    }
+
+    .goals__card,
+    .stable__card,
+    .methods__card {
+        max-width: 100%;
+    }
+
+    .contact__card-first,
+    .contact__card-second {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .contact__card-second {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 428px) and (max-height: 926px) {
+    .inner {
+        box-shadow: 0 4px 35px rgba(5, 0, 255, 0.3);
+    }
+
+    .providing__card,
+    .roadmap__card {
+        box-shadow: none;
+    }
+
+    .goals__card > .wrap,
+    .stable__card > .wrap {
+        padding: 20px 25px;
+    }
+
+    .methods__card > .wrap {
+        padding: 25px 15px 25px 25px;
+    }
+
+    .contact__card-first > .wrap,
+    .broker__card-first > .wrap {
+        padding: 20px;
+    }
+
+    .contact__card-second > .wrap,
+    .broker__card-second > .wrap {
+        padding: 20px;
+    }
+
+    .broker__card-first,
+    .broker__card-second {
+        max-width: 100%;
+    }
+
+    .broker__card-second {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+}
+
+@media (max-width: 390px) {
+    .methods__card > .wrap {
+        padding: 20px;
+    }
+
+    .contact__card-first > .wrap,
+    .broker__card-first > .wrap {
+        padding: 15px;
+    }
+
+    .contact__card-second > .wrap,
+    .broker__card-second > .wrap {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 375px) {
+    .inner {
+        border-radius: 15px;
+    }
+
+    .goals__card > .wrap {
+        padding: 20px 15px;
+    }
+
+    .methods__card > .wrap {
+        padding: 15px 20px;
+    }
+
+    .contact__card-first > .wrap {
+        padding: 15px 10px;
+    }
+
+    .contact__card-second {
+        margin-top: 10px;
+    }
+
+    .stable__card > .wrap {
+        padding: 15px;
+    }
+
+    .broker__card-second {
+        margin-top: 10px;
+    }
+}

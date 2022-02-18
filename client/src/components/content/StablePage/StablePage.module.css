@@ -1,0 +1,37 @@
+.copy {
+    position: absolute;
+    bottom: 30px;
+}
+
+.wrap {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+@media (max-width: 1920px) {
+    .copy {
+        bottom: 0;
+    }
+}
+
+@media (max-width: 1024px) {
+    .br {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .wrap {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 428px) and (max-height: 926px) {
+    .copy {
+        display: none;
+    }
+}
+
+@media (max-width: 390px) {
+}

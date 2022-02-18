@@ -1,0 +1,8 @@
+.inner {
+    margin: 0.74em 0 0;
+}
+@media (max-width: 2560px) {
+    .inner {
+        margin: 0;
+    }
+}

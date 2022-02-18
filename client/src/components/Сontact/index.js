@@ -1,0 +1,1 @@
+export {default as Сontact} from './Сontact'

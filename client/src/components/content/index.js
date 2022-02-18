@@ -1,0 +1,8 @@
+export {default as HomePage} from './HomePage/HomePage'
+export {default as ProvidePage} from './ProvidePage/ProvidePage'
+export {default as GoalsPage} from './GoalsPage/GoalsPage'
+export {default as MethodsPage} from './MethodsPage/MethodsPage'
+export {default as СontactPage} from './СontactPage/СontactPage'
+export {default as StablePage} from './StablePage/StablePage'
+export {default as RoadmapPage} from './RoadmapPage/RoadmapPage'
+export {default as BrokerPage} from './BrokerPage/BrokerPage'

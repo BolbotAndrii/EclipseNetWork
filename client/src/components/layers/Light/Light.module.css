@@ -1,0 +1,240 @@
+.inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.wrap {
+    width: 100%;
+    height: 100%;
+    max-width: 35em;
+    max-height: 11em;
+    /*left: 50%;*/
+    position: absolute;
+    right: 0;
+}
+
+.wrap__ray {
+    width: 100%;
+    height: 100%;
+    max-width: 11em;
+    position: absolute;
+    right: 19%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*background: rgba(255, 0, 0, 0.38);*/
+}
+
+.ray {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: radial-gradient(49.59% 49.59% at 50.69% 51.63%, #FFFFFF 50%, #CCFF00 50%);
+    border-radius: 50%;
+    opacity: 0.7;
+    filter: blur(7px);
+}
+
+.ray__1 {
+    right: -10%;
+    height: 6px;
+    /*filter: none;*/
+}
+
+.ray__2 {
+    transform: rotate(45deg) translateY(-50%);
+    height: 4px;
+}
+
+.ray__3 {
+    transform: rotate(-45deg) translateY(-50%);
+    height: 4px;
+}
+
+.blick {
+    /*display: none;*/
+    width: 100%;
+    height: 100%;
+    max-width: 7.5em;
+    position: absolute;
+    /*right: 21%;*/
+    border-radius: 60%;
+    filter: blur(65px);
+    background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 50%, #C358FF 100%);
+}
+
+.ray_1 {
+    right: -30%;
+}
+
+.ray_2 {
+    right: -70%;
+}
+
+@media screen and (max-width: 3072px) {
+    .wrap__ray {
+        right: 17%;
+    }
+}
+
+@media (max-width: 2880px) {
+    .wrap__ray {
+        right: 16%;
+    }
+}
+
+@media (max-width: 2560px) {
+    .wrap__ray {
+        right: 17%;
+    }
+}
+
+@media (max-width: 1920px) {
+    .wrap {
+        /*background: rgba(102, 51, 153, 0.49);*/
+    }
+
+    .wrap__ray {
+        right: 21%;
+        /*background: rgba(255, 0, 0, 0.3);*/
+    }
+
+    .ray {
+        opacity: 0.7;
+        filter: blur(5px);
+    }
+
+    .ray__1 {
+        right: -6%;
+        height: 4px;
+    }
+
+    .ray__2 {
+        height: 3px;
+    }
+
+    .ray__3 {
+        height: 3px;
+    }
+
+    .blick {
+        max-width: 6.5em;
+        border-radius: 60%;
+        filter: blur(30px);
+        /*filter: none;*/
+        /*background: red;*/
+        background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 70%, #C358FF 100%);
+    }
+}
+
+@media (max-width: 1440px) {
+    .wrap__ray {
+        right: 19%;
+    }
+}
+
+@media (max-width: 1280px) {
+    .wrap__ray {
+        right: 18%;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .wrap {
+        width: 100%;
+        height: 100%;
+        max-width: 30em;
+        max-height: 8em;
+        /*left: 50%;*/
+        top: 43%;
+        transform: translateY(-43%);
+        position: absolute;
+        right: 0;
+        /*background: rgba(102, 51, 153, 0.29);*/
+    }
+
+    .wrap__ray {
+        max-width: 8em;
+        right: 10%;
+        /*background: rgba(255, 0, 0, 0.32);*/
+    }
+
+    .ray {
+        opacity: 0.9;
+        filter: blur(4px);
+    }
+
+    .ray__1 {
+        right: -6%;
+        height: 3px;
+    }
+
+    .ray__2 {
+        height: 2px;
+    }
+
+    .ray__3 {
+        height: 2px;
+    }
+
+    .blick {
+        /*display: none;*/
+        max-width: 6.5em;
+        border-radius: 60%;
+        filter: blur(30px);
+        /*filter: none;*/
+        /*background: red;*/
+        background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 70%, #C358FF 100%);
+    }
+}
+
+@media (max-width: 428px) {
+
+    .wrap {
+        top: 20%;
+        transform: translateY(-20%);
+        position: absolute;
+        right: 0;
+        max-height: 7em;
+        /*background: rgba(102, 51, 153, 0.29);*/
+    }
+    .wrap__ray {
+        max-width: 7em;
+        right: 12%;
+        /*background: rgba(255, 0, 0, 0.32);*/
+    }
+
+    .ray {
+        opacity: inherit;
+        filter: blur(2px);
+    }
+
+    .ray__1 {
+        right: -6%;
+        height: 2px;
+    }
+
+    .ray__2 {
+        height: 1px;
+    }
+
+    .ray__3 {
+        height: 1px;
+    }
+
+    .blick {
+        /*display: none;*/
+        max-width: 6.5em;
+        border-radius: 60%;
+        filter: blur(25px);
+        /*filter: none;*/
+        /*background: red;*/
+        background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 60%, #C358FF 80%);
+    }
+}

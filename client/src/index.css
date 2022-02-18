@@ -1,0 +1,355 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-bg-color: #000;
+    --main-text-color: #fff;
+}
+
+@font-face {
+    font-family: "SF UI Display";
+    src: url(assets/fonts/SF-UI-Display/SF-UI-Display-Ultralight.eot);
+    src: url(assets/fonts/SF-UI-Display/SF-UI-Display-Ultralight.eot?#iefix) format("embedded-opentype"),
+    url(assets/fonts/SF-UI-Display/SF-UI-Display-Ultralight.woff2) format("woff2"),
+    url(assets/fonts/SF-UI-Display/SF-UI-Display-Ultralight.woff) format("woff"),
+    url(assets/fonts/SF-UI-Display/SF-UI-Display-Ultralight.ttf) format("truetype"),
+    url(assets/fonts/SF-UI-Display/SF-UI-Display-Ultralight.svg) format("svg");
+    font-weight: 100
+}
+
+@font-face {
+    font-family: "SF UI Display";
+    src: url(assets/fonts/SF-UI-Display/SF-UI-Display-Thin.eot);
+    src: url(assets/fonts/SF-UI-Display/SF-UI-Display-Thin.eot?#iefix) format("embedded-opentype"),
+    url(assets/fonts/SF-UI-Display/SF-UI-Display-Thin.woff2) format("woff2"),
+    url(assets/fonts/SF-UI-Display/SF-UI-Display-Thin.woff) format("woff"),
+    url(assets/fonts/SF-UI-Display/SF-UI-Display-Thin.ttf) format("truetype"),
+    url(assets/fonts/SF-UI-Display/SF-UI-Display-Thin.svg) format("svg");
+    font-weight: 200
+}
+
+@font-face {
+    font-family: "SF UI Display";
+    src: url(assets/fonts/SF-UI-Display/SF-UI-Display-Light.eot);
+    src: url(assets/fonts/SF-UI-Display/SF-UI-Display-Light.eot?#iefix) format("embedded-opentype"),
+    url(assets/fonts/SF-UI-Display/SF-UI-Display-Light.woff2) format("woff2"),
+    url(assets/fonts/SF-UI-Display/SF-UI-Display-Light.woff) format("woff"),
+    url(assets/fonts/SF-UI-Display/SF-UI-Display-Light.ttf) format("truetype"),
+    url(assets/fonts/SF-UI-Display/SF-UI-Display-Light.svg) format("svg");
+    font-weight: 300
+}
+
+@font-face {
+    font-family: "SF UI Display";
+    src: url(assets/fonts/SF-UI-Display/SF-UI-Display-Bold.eot);
+    src: url(assets/fonts/SF-UI-Display/SF-UI-Display-Bold.eot?#iefix) format("embedded-opentype"),
+    url(assets/fonts/SF-UI-Display/SF-UI-Display-Bold.woff2) format("woff2"),
+    url(assets/fonts/SF-UI-Display/SF-UI-Display-Bold.woff) format("woff"),
+    url(assets/fonts/SF-UI-Display/SF-UI-Display-Bold.ttf) format("truetype"),
+    url(assets/fonts/SF-UI-Display/SF-UI-Display-Bold.svg) format("svg");
+    font-weight: 600
+}
+
+@font-face {
+    font-family: "SF UI Display";
+    src: url(assets/fonts/SF-UI-Display/SF-UI-Display-Black.eot);
+    src: url(assets/fonts/SF-UI-Display/SF-UI-Display-Black.eot?#iefix) format("embedded-opentype"),
+    url(assets/fonts/SF-UI-Display/SF-UI-Display-Black.woff2) format("woff2"),
+    url(assets/fonts/SF-UI-Display/SF-UI-Display-Black.woff) format("woff"),
+    url(assets/fonts/SF-UI-Display/SF-UI-Display-Black.ttf) format("truetype"),
+    url(assets/fonts/SF-UI-Display/SF-UI-Display-Black.svg) format("svg");
+    font-weight: 800
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url(assets/fonts/Gilroy/Gilroy-Medium.eot);
+    src: url(assets/fonts/Gilroy/Gilroy-Medium.eot?#iefix) format("embedded-opentype"),
+    url(assets/fonts/Gilroy/Gilroy-Medium.woff2) format("woff2"),
+    url(assets/fonts/Gilroy/Gilroy-Medium.woff) format("woff"),
+    url(assets/fonts/Gilroy/Gilroy-Medium.ttf) format("truetype"),
+    url(assets/fonts/Gilroy/Gilroy-Medium.svg) format("svg");
+    font-weight: 500
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url(assets/fonts/Gilroy/Gilroy-ExtraBold.eot);
+    src: url(assets/fonts/Gilroy/Gilroy-ExtraBold.eot?#iefix) format("embedded-opentype"),
+    url(assets/fonts/Gilroy/Gilroy-ExtraBold.woff2) format("woff2"),
+    url(assets/fonts/Gilroy/Gilroy-ExtraBold.woff) format("woff"),
+    url(assets/fonts/Gilroy/Gilroy-ExtraBold.ttf) format("truetype"),
+    url(assets/fonts/Gilroy/Gilroy-ExtraBold.svg) format("svg");
+    font-weight: 800
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url(assets/fonts/Gilroy/Gilroy-Black.eot);
+    src: url(assets/fonts/Gilroy/Gilroy-Black.eot?#iefix) format("embedded-opentype"),
+    url(assets/fonts/Gilroy/Gilroy-Black.woff2) format("woff2"),
+    url(assets/fonts/Gilroy/Gilroy-Black.woff) format("woff"),
+    url(assets/fonts/Gilroy/Gilroy-Black.ttf) format("truetype"),
+    url(assets/fonts/Gilroy/Gilroy-Black.svg) format("svg");
+    font-weight: 900
+}
+
+.fp-section,
+.fp-tableCell {
+    height: calc(100 * var(--vh)) !important;
+}
+
+.fp-controlArrow.fp-prev {
+    border: none;
+    /*left: 80px!important;*/
+    left: 1.47em !important;
+    width: 100% !important;
+    height: 100% !important;
+    max-width: 100px;
+    max-height: 100px;
+    background: url(assets/img/arrow-left.png) center / cover no-repeat;
+    cursor: pointer;
+}
+
+.fp-controlArrow.fp-next {
+    border: none;
+    /*right: 80px!important;*/
+    right: 1.47em !important;
+    width: 100% !important;
+    height: 100% !important;
+    max-width: 100px;
+    max-height: 100px;
+    background: url(assets/img/arrow-right.png) center / cover no-repeat;
+    cursor: pointer;
+}
+
+.fp-viewing-slide-1-0 .fp-controlArrow.fp-next {
+    display: none !important;
+}
+
+
+.fp-controlArrow {
+    top: 60% !important;
+    transform: translateY(-60%) !important;
+}
+
+html {
+    height: calc(100 * var(--vh)) !important;
+    font-size: calc(1em + 1vw);
+}
+
+body {
+    height: calc(100 * var(--vh)) !important;
+    color: var(--main-text-color);
+    background: var(--main-bg-color);
+}
+
+button:focus {
+    outline: none;
+}
+
+.container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 70px 0 228px;
+}
+
+@media screen and (max-width: 3072px) {
+    .container {
+        padding: 0 50px 0 150px;
+    }
+
+    .fp-controlArrow.fp-prev,
+    .fp-controlArrow.fp-next {
+        max-width: 90px;
+        max-height: 90px;
+    }
+
+    .fp-controlArrow.fp-prev {
+        left: 1.25em !important;
+    }
+
+    .fp-controlArrow.fp-next {
+        right: 1.25em !important;
+    }
+}
+
+@media (max-width: 2560px) {
+    html {
+        font-size: calc(0.85em + 1vw);
+    }
+
+    .container {
+        padding: 0 50px 0 110px;
+    }
+
+    .fp-controlArrow.fp-prev,
+    .fp-controlArrow.fp-next {
+        max-width: 80px;
+        max-height: 80px;
+    }
+
+    .fp-controlArrow.fp-prev {
+        left: 1.8em !important;
+    }
+
+    .fp-controlArrow.fp-next {
+        right: 1.8em !important;
+    }
+}
+
+@media screen and (max-width: 1920px) {
+    html {
+        font-size: calc(0.4em + 1vw);
+    }
+
+    .container {
+        padding: 0 25px 0 45px;
+    }
+
+    .fp-controlArrow.fp-prev,
+    .fp-controlArrow.fp-next {
+        max-width: 50px;
+        max-height: 50px;
+    }
+
+    .fp-controlArrow.fp-prev {
+        left: 1.2em !important;
+    }
+
+    .fp-controlArrow.fp-next {
+        right: 1.2em !important;
+    }
+}
+
+@media (max-width: 1440px) {
+    .container {
+        padding: 0 25px;
+    }
+
+    .fp-controlArrow.fp-prev,
+    .fp-controlArrow.fp-next {
+        max-width: 45px;
+        max-height: 45px;
+    }
+
+    .fp-controlArrow.fp-prev {
+        left: 1.1em !important;
+    }
+
+    .fp-controlArrow.fp-next {
+        right: 1.1em !important;
+    }
+}
+
+
+@media (max-width: 1280px) {
+    .fp-controlArrow.fp-prev,
+    .fp-controlArrow.fp-next {
+        max-width: 40px;
+        max-height: 40px;
+    }
+
+    .fp-controlArrow.fp-prev {
+        left: 1.1em !important;
+    }
+
+    .fp-controlArrow.fp-next {
+        right: 1.1em !important;
+    }
+}
+
+@media (max-width: 1024px) {
+    html {
+        font-size: calc(1.2em + 1vw);
+    }
+
+    .container {
+        padding: 0 20px;
+    }
+    .fp-controlArrow.fp-prev,
+    .fp-controlArrow.fp-next {
+        max-width: 60px;
+        max-height: 60px;
+    }
+
+    .fp-controlArrow.fp-prev {
+        left: 40px !important;
+    }
+
+    .fp-controlArrow.fp-next {
+        right: 40px !important;
+    }
+    .fp-controlArrow {
+        top: 95% !important;
+        transform: translateY(-95%) !important;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: calc(1em + 1vw);
+    }
+    .fp-controlArrow.fp-prev,
+    .fp-controlArrow.fp-next {
+        max-width: 50px;
+        max-height: 50px;
+    }
+    .fp-controlArrow {
+        top: 95% !important;
+        transform: translateY(-95%) !important;
+    }
+}
+
+@media (max-width: 428px) and (max-height: 926px) {
+    .fp-controlArrow.fp-prev,
+    .fp-controlArrow.fp-next {
+        max-width: 35px;
+        max-height: 35px;
+    }
+    .fp-controlArrow.fp-prev {
+        left: 20px !important;
+    }
+
+    .fp-controlArrow.fp-next {
+        right: 20px !important;
+    }
+    .fp-controlArrow {
+        top: inherit !important;
+        transform: translateY(0%) !important;
+        bottom: 15px;
+        display: none!important;
+    }
+}
+
+@media (max-width: 420px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .br {
+        display: none;
+    }
+}
+
+@media (max-width: 375px) {
+    .container {
+        padding: 0 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

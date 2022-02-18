@@ -1,0 +1,397 @@
+.button {
+    font-family: "Gilroy", sans-serif;
+    font-weight: 900;
+    font-size: 0.827em;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: var(--main-text-color);
+    background: #A400FF;
+    height: 2.78em;
+    padding: 0 55px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+}
+
+.button:focus {
+    outline: none;
+}
+
+.button span {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    display: inline-block;
+    transform: skewX(-9deg);
+    background: #A400FF;
+    height: 2.78em;
+    transition: all .3s linear;
+}
+
+.home_btn {
+    width: 100%;
+    max-width: 10.67em;
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -85%);
+}
+
+.home_btn:after,
+.home_btn:before,
+.goals__btn:after,
+.stable__btn:after,
+.form__btn:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    display: inline-block;
+}
+
+.home_btn:before {
+    left: -19px;
+    border-left: 19px solid transparent;
+    border-bottom: 2.78em solid #A400FF;
+}
+
+.home_btn:after {
+    right: -19px;
+    border-right: 19px solid transparent;
+    border-top: 2.78em solid #A400FF;
+}
+
+.goals__btn {
+    margin-top: 4.5em;
+}
+
+.stable__btn {
+    margin-top: 4.5em;
+}
+
+.goals__btn:after,
+.stable__btn:after {
+    right: -19px;
+    border-right: 19px solid transparent;
+    border-top: 2.78em solid #A400FF;
+}
+
+.form__btn {
+    margin: 2em 0 0;
+}
+
+.form__btn:after {
+    right: -19px;
+    border-right: 19px solid transparent;
+    border-top: 2.78em solid #A400FF;
+}
+
+.button span:nth-child(1) {
+    right: -22px;
+    width: 5px;
+}
+
+.button span:nth-child(2) {
+    right: -36px;
+    width: 3px;
+}
+
+.button span:nth-child(3) {
+    right: -52px;
+    width: 1px;
+}
+
+.button span:nth-child(4) {
+    left: -22px;
+    width: 5px;
+}
+
+.button span:nth-child(5) {
+    left: -36px;
+    width: 3px;
+}
+
+.button span:nth-child(6) {
+    left: -52px;
+    width: 1px;
+}
+
+.button:hover span:nth-child(1) {
+    right: -12px;
+}
+
+.button:hover span:nth-child(2) {
+    right: -14px;
+}
+
+.button:hover span:nth-child(3) {
+    right: -14px;
+}
+
+.button:hover span:nth-child(4) {
+    left: -12px;
+}
+
+.button:hover span:nth-child(5) {
+    left: -14px;
+}
+
+.button:hover span:nth-child(6) {
+    left: -14px;
+}
+
+@media screen and (max-width: 3072px) {
+    .button span {
+        transform: skewX(-10deg);
+    }
+}
+
+@media screen and (max-width: 2560px) {
+    .button span {
+        transform: skewX(-11.5deg);
+    }
+
+    .stable__btn {
+        margin-left: 2.41837em;
+    }
+}
+
+@media (max-width: 1920px) {
+    .button {
+        padding: 0 30px;
+        height: 2.8em;
+        font-size: 0.915em;
+    }
+
+    .button span {
+        height: 2.8em;
+        transform: skewX(-16deg);
+    }
+
+
+    .home_btn:before {
+        border-bottom: 2.8em solid #A400FF;
+    }
+
+    .home_btn:after,
+    .goals__btn:after,
+    .stable__btn:after,
+    .form__btn:after {
+        border-top: 2.8em solid #A400FF;
+    }
+
+    .home_btn {
+        max-width: 14.2em;
+    }
+
+    .goals__btn {
+        margin-top: 2.8em;
+    }
+
+    .stable__btn {
+        margin-top: 3em;
+    }
+}
+
+@media (max-width: 1440px) {
+    .button span {
+        transform: skewX(-20deg);
+    }
+}
+
+@media (max-width: 1024px) {
+    .button {
+        font-size: 0.85em;
+    }
+
+    .button span {
+        transform: skewX(-16deg);
+    }
+
+    .home_btn {
+        max-width: 13em;
+    }
+
+    .stable__btn {
+        margin-left: 0;
+        margin-top: 4em;
+    }
+}
+
+@media (max-width: 768px) {
+    .button span {
+        transform: skewX(-18deg);
+    }
+}
+
+@media (max-width: 600px) {
+    .button {
+        font-size: 0.95em;
+    }
+
+    .home_btn {
+        top: 93%;
+        left: 50%;
+        transform: translate(-50%, -93%);
+    }
+
+    .form__btn {
+        margin: 1.5em 0 0;
+    }
+}
+
+@media (max-width: 428px) and (max-height: 926px) {
+    .button {
+        font-size: 20px;
+        height: 50px;
+        padding: 0 15px;
+    }
+
+    .button span {
+        height: 50px;
+        transform: skewX(-21deg);
+    }
+
+    .home_btn:before {
+        border-bottom: 50px solid #A400FF;
+    }
+
+    .stable__btn {
+        margin-top: 1.5em;
+    }
+
+    .home_btn:after,
+    .goals__btn:after,
+    .stable__btn:after,
+    .form__btn:after {
+        border-top: 50px solid #A400FF;
+    }
+
+    .home_btn {
+        top: inherit;
+        left: 50%;
+        bottom: 35px;
+        transform: translate(-50%, 0%);
+        max-width: 11em;
+    }
+
+    .goals__btn {
+        margin-top: 50px;
+    }
+
+    .stable__btn {
+    }
+
+    .form__btn {
+        height: 46px;
+        font-size: 16px;
+        margin: 25px 0 0;
+    }
+
+    .form__btn span {
+        height: 46px;
+    }
+
+    .form__btn:after {
+        border-top: 46px solid #A400FF;
+    }
+
+    .button span:nth-child(1) {
+        right: -20px;
+        width: 5px;
+    }
+
+    .button span:nth-child(2) {
+        right: -31px;
+        width: 3px;
+    }
+
+    .button span:nth-child(3) {
+        right: -43px;
+        width: 1px;
+    }
+
+    .button span:nth-child(4) {
+        left: -20px;
+        width: 5px;
+    }
+
+    .button span:nth-child(5) {
+        left: -31px;
+        width: 3px;
+    }
+
+    .button span:nth-child(6) {
+        left: -43px;
+        width: 1px;
+    }
+}
+
+@media (max-width: 390px) {
+    .button {
+        font-size: 18px;
+        font-weight: 800;
+    }
+
+    .button span {
+    }
+
+    .form__btn {
+        font-size: 16px;
+        height: 42px;
+    }
+
+    .form__btn span {
+        height: 42px;
+        transform: skewX(-23deg);
+    }
+
+    .form__btn:after {
+        border-top: 42px solid #A400FF;
+    }
+
+    .home_btn {
+        bottom: 20px;
+    }
+}
+
+@media (max-width: 375px) {
+    .button {
+        font-size: 16px;
+        height: 44px;
+    }
+
+    .button:after {
+        border-top: 44px solid #A400FF;
+    }
+    .button:before {
+        border-bottom: 44px solid #A400FF;
+    }
+    .home_btn {
+        bottom: 15px;
+    }
+
+    .button span {
+        height: 44px;
+        transform: skewX(-24deg);
+    }
+
+    .goals__btn {
+        margin-top: 35px;
+    }
+
+    .form__btn {
+        font-size: 14px;
+        height: 38px;
+        margin-top: 15px;
+    }
+    .form__btn span {
+        height: 38px;
+        transform: skewX(-26deg);
+    }
+
+    .form__btn:after {
+        border-top: 38px solid #A400FF;
+    }
+}

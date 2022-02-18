@@ -1,0 +1,301 @@
+.inner {
+    position: relative;
+    width: 100%;
+}
+
+.inner > img {
+    width: 100%;
+}
+
+.moon {
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+
+.moon > img {
+    height: 100%;
+}
+
+.moon__1 {
+    max-width: 8.5em;
+    display: inline-block;
+    top: 8%;
+    left: 18%;
+}
+
+.moon__2 {
+    top: 42%;
+    left: 53%;
+    z-index: 2;
+    display: inline-block;
+    transform: translate(-42%, -53%);
+    max-width: 3.2em;
+}
+
+.moon__3 {
+    top: 85%;
+    left: 53%;
+    z-index: 2;
+    display: inline-block;
+    transform: translate(-85%, -53%);
+    max-width: 5.7em;
+}
+
+.moon__4 {
+    top: 30%;
+    left: 50%;
+    z-index: 1;
+    display: inline-block;
+    transform: translate(-50%, -30%);
+    max-width: 22em;
+}
+
+.spaceship__1 {
+    /*max-width: 800px;*/
+    max-width: 14.7em;
+    z-index: 1;
+    display: inline-block;
+    top: 80%;
+    left: 85%;
+    transform: translate(-85%, -80%);
+}
+
+.starship {
+    top: 60%;
+    left: 85%;
+    z-index: 1;
+    display: inline-block;
+    transform: translate(-85%, -60%) rotate(89deg);
+    max-width: 15em;
+    position: absolute;
+}
+
+/*Contact*/
+.contact_ship {
+    max-width: 13em;
+    z-index: 1;
+    display: inline-block;
+    top: 87%;
+    left: 70%;
+    transform: translate(-70%, -87%);
+    position: absolute;
+}
+.contact_ship_1,
+.contact_ship_2,
+.contact_ship_3,
+.contact_ship_4,
+.contact_ship_5 {
+    position: absolute;
+    z-index: 1;
+    display: inline-block;
+}
+.contact_ship_1 {
+    top: 47%;
+    left: 63%;
+    transform: translate(-63%, -47%);
+    max-width: 5em;
+
+}
+.contact_ship_2 {
+    top: 30%;
+    left: 59%;
+    transform: translate(-59%, -30%);
+    max-width: 2.5em;
+}
+.contact_ship_3 {
+    top: 45%;
+    left: 57%;
+    transform: translate(-57%, -45%);
+    max-width: 2em;
+}
+.contact_ship_4 {
+    top: 35%;
+    left: 54%;
+    transform: translate(-54%, -35%);
+    max-width: 1.7em;
+}
+.contact_ship_5 {
+    top: 46%;
+    left: 53%;
+    transform: translate(-53%, -46%);
+    max-width: 1em;
+}
+/*Contact*/
+
+/*Stable*/
+.stable_ship {
+    top: 90%;
+    left: 90%;
+    z-index: 1;
+    display: inline-block;
+    transform: translate(-90%, -90%);
+    max-width: 15em;
+    position: absolute;
+}
+/*Stable*/
+/*Roadmap*/
+.roadmap_ship {
+    top: 65%;
+    left: 80%;
+    z-index: 1;
+    display: inline-block;
+    transform: translate(-80%, -65%);
+    max-width: 20em;
+    position: absolute;
+}
+/*Roadmap*/
+/*Broker*/
+.broker_ship {
+    max-width: 13em;
+    z-index: 1;
+    display: inline-block;
+    top: 87%;
+    left: 70%;
+    transform: translate(-70%, -87%);
+    position: absolute;
+}
+.broker_ship_1,
+.broker_ship_2,
+.broker_ship_3,
+.broker_ship_4,
+.broker_ship_5 {
+    position: absolute;
+    z-index: 1;
+    display: inline-block;
+}
+.broker_ship_1 {
+    top: 55%;
+    left: 85%;
+    transform: translate(-85%, -55%);
+    max-width: 4.5em;
+
+}
+.broker_ship_2 {
+    top: 35%;
+    left: 80%;
+    transform: translate(-80%, -35%);
+    max-width: 2.2em;
+}
+.broker_ship_3 {
+    top: 50%;
+    left: 76.5%;
+    transform: translate(-76.5%, -50%);
+    max-width: 2em;
+}
+.broker_ship_4 {
+    top: 37%;
+    left: 74%;
+    transform: translate(-74%, -37%);
+    max-width: 1.7em;
+}
+.broker_ship_5 {
+    top: 45%;
+    left: 70%;
+    transform: translate(-70%, -45%);
+    max-width: 1em;
+}
+/*Broker*/
+@media (max-width: 3072px) {
+    .contact_ship {
+        max-width: 13em;
+        top: 87%;
+        left: 72%;
+        transform: translate(-72%, -87%);
+    }
+}
+@media (max-width: 2880px) {
+    .broker_ship {
+        max-width: 13em;
+        top: 90%;
+        left: 75%;
+        transform: translate(-75%, -90%);
+    }
+}
+@media (max-width: 2560px) {
+    .spaceship__1 {
+        max-width: 13em;
+        top: 80%;
+        left: 85%;
+        transform: translate(-85%, -80%);
+    }
+}
+@media (max-width: 1920px) {
+    .contact_ship {
+        max-width: 13em;
+        top: 97%;
+        left: 69%;
+        transform: translate(-69%, -97%);
+    }
+}
+@media (max-width: 1440px) {
+    .contact_ship {
+        max-width: 12em;
+        top: 87%;
+        left: 71%;
+        transform: translate(-71%, -87%);
+    }
+}
+@media (max-width: 1280px) {
+    .roadmap_ship {
+        top: 65%;
+        left: 85%;
+        transform: translate(-85%, -65%);
+        max-width: 17em;
+    }
+}
+@media (max-width: 1024px) {
+    .moon__1 {
+        top: 30%;
+        left: 8%;
+    }
+
+    .moon__2 {
+        top: 50%;
+        left: 73%;
+        transform: translate(-50%, -73%);
+        max-width: 3em;
+    }
+
+    .moon__3 {
+        top: 83%;
+        left: 65%;
+        display: inline-block;
+        transform: translate(-65%, -83%);
+        max-width: 5.4em;
+    }
+
+    .moon__4 {
+        max-width: 18em;
+        top: 45%;
+        left: 85%;
+        transform: translate(-85%, -45%);
+    }
+
+    .spaceship__1 {
+        max-width: 13em;
+        top: 80%;
+        left: 100%;
+        transform: translate(-90%, -80%);
+    }
+}
+@media (max-width: 600px) {
+    .moon__2 {
+        display: none;
+    }
+    .moon__4 {
+        top: 45%;
+        left: 100%;
+        transform: translate(-60%, -45%);
+    }
+    .spaceship__1 {
+        max-width: 11.5em;
+    }
+}
+@media (max-width: 390px) {
+    .moon__4 {
+        top: 54%;
+        left: 100%;
+        transform: translate(-55%, -54%);
+    }
+}

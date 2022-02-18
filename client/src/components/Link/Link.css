@@ -1,0 +1,221 @@
+.link {
+    font-family: "SF UI Display", sans-serif;
+    font-weight: 300;
+    font-size: 0.735em;
+    line-height: 1;
+    /*line-height: 50px;*/
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 0 4px 40px #4D00AE;
+    text-decoration: none;
+    margin-left: 180px;
+    transition: all .3s linear;
+    position: relative;
+    height: 54px;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+}
+
+.link:first-child {
+    margin-left: 0;
+}
+
+.link.active {
+    font-weight: 800;
+    text-shadow: 0 0 25px #FFFFFF;
+}
+
+.link:hover {
+    font-weight: 800;
+    text-shadow: 0 0 25px #FFFFFF;
+}
+
+.link.active > svg path {
+    fill: url('#header-shape-gradient');
+}
+
+.link:hover > svg path {
+    fill: url('#header-shape-gradient');
+}
+
+/*.link.active:before {*/
+/*    content: '';*/
+/*    position: absolute;*/
+/*    width: 12px;*/
+/*    height: 12px;*/
+/*    background: url("../../assets/img/moon.png") center / cover no-repeat;*/
+/*    !*top: -10px;*!*/
+/*    !*top: -12px;*!*/
+/*    top: -0.25em;*/
+/*    !*right: -25px;*!*/
+/*    !*right: -24px;*!*/
+/*    right: -0.5em;*/
+/*}*/
+
+.link:nth-child(1).active:before {
+    /*animation: moon1 6s ease-in-out infinite;*/
+}
+
+.link:nth-child(2).active:before {
+    /*animation: moon2 6s ease-in-out infinite;*/
+}
+
+.link:nth-child(3).active:before {
+    /*animation: moon3 6s ease-in-out infinite;*/
+}
+
+.link:nth-child(4).active:before {
+    /*animation: moon4 6s ease-in-out infinite;*/
+}
+
+.link:nth-child(5).active:before {
+    /*animation: moon5 6s ease-in-out infinite;*/
+}
+
+@keyframes moon1 {
+    0% {
+        transform: translateX(0px) translateY(0px);
+        z-index: -3;
+    }
+    50% {
+        transform: translateX(-90px) translateY(60px);
+        z-index: 0;
+    }
+    100% {
+        transform: translateX(0px) translateY(0px);
+        z-index: 1;
+    }
+}
+
+@keyframes moon2 {
+    0% {
+        transform: translateX(0px) translateY(0px);
+        z-index: -3;
+    }
+    50% {
+        /*transform: translateX(-223px) translateY(58px);*/
+        transform: translateX(-5.6em) translateY(1.6em);
+        /*transform: translateX(-226px) translateY(66px);*/
+        z-index: 0;
+    }
+    100% {
+        transform: translateX(0px) translateY(0px);
+        z-index: 1;
+    }
+}
+
+@keyframes moon3 {
+    0% {
+        transform: translateX(0px) translateY(0px);
+        z-index: -3;
+    }
+    50% {
+        transform: translateX(-150px) translateY(58px);
+        z-index: 0;
+    }
+    100% {
+        transform: translateX(0px) translateY(0px);
+        z-index: 1;
+    }
+}
+
+@keyframes moon4 {
+    0% {
+        transform: translateX(0px) translateY(0px);
+        z-index: -3;
+    }
+    50% {
+        transform: translateX(-214px) translateY(58px);
+        z-index: 0;
+    }
+    100% {
+        transform: translateX(0px) translateY(0px);
+        z-index: 1;
+    }
+}
+
+@keyframes moon5 {
+    0% {
+        transform: translateX(0px) translateY(0px);
+        z-index: -3;
+    }
+    50% {
+        transform: translateX(-265px) translateY(58px);
+        z-index: 0;
+    }
+    100% {
+        transform: translateX(0px) translateY(0px);
+        z-index: 1;
+    }
+}
+
+.link.mob {
+    font-size: 1.9em;
+    line-height: 1.6;
+    font-weight: 800;
+    text-shadow: none;
+    margin-left: 0;
+    height: auto;
+}
+
+
+@media screen and (max-width: 3072px) {
+    .link {
+        margin-left: 150px;
+    }
+}
+
+@media (max-width: 2560px) {
+    .link {
+        margin-left: 110px;
+    }
+}
+
+@media (max-width: 1920px) {
+    .link {
+        height: 28px;
+        margin-left: 80px;
+    }
+
+    .link > svg {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media (max-width: 1440px) {
+    .link {
+        font-size: 16px;
+        margin-left: 60px;
+    }
+
+    .link > svg {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+@media (max-width: 768px) {
+    .link.mob {
+        font-size: 1.6em;
+        line-height: 1.8;
+    }
+}
+@media (max-width: 428px) {
+    .link.mob {
+        font-size: 1.4em;
+        line-height: 1.7;
+    }
+}
+@media (max-width: 390px) {
+    .link.mob {
+        font-size: 24px;
+        line-height: 1.7;
+    }
+}
+@media (max-width: 375px) {
+    .link.mob {
+        font-size: 20px;
+    }
+}

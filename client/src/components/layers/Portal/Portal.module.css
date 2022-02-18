@@ -1,0 +1,23 @@
+.inner {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    text-align: end;
+}
+
+.inner > img {
+    width: 100%;
+    /*max-width: 70%;*/
+    max-width: 48em;
+    mix-blend-mode: screen;
+    position: relative;
+}
+@media (max-width: 1024px) {
+    .inner > img {
+        top: 45%;
+        right: -10%;
+        transform: translate(10%, -45%);
+    }
+}

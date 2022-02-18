@@ -1,0 +1,36 @@
+.inner {
+    position: relative;
+    width: 100%;
+}
+.inner > img {
+}
+
+.moon {
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+.moon > img {
+    height: 100%;
+}
+
+.moon__1 {
+    width: 100%;
+    max-width: 475px;
+}
+
+.spaceship__1 {
+    width: 100%;
+    max-width: 800px;
+}
+
+@media (max-width: 1024px) {
+    .moon {
+        left: -120px;
+    }
+}
+@media (max-width: 428px) and (max-height: 926px) {
+    .moon {
+        left: -110px;
+    }
+}
